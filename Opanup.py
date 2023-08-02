@@ -35,9 +35,10 @@ main_menu = ('''
 \033[1;91mbrutex\033[1;97m>>\033[1;92m ''')
 
 banr = ("""\033[1;92m   ___           __      _  __
-  / _ )______ __/ /____ | |/_/
- / _  / __/ // / __/ -_)>  <  
-/____/_/  \_,_/\__/\__//_/|_|  
+    _____
+   /     \
+  / _____ \
+ /         \ PRO v.1.3
 \033[1;91m<═══\033[1;41m\033[1;97m Created by Opanup \033[;0m\033[1;91m═══>\033[1;92m""")
 
 about = ("""\033[1;91m[\033[1;97m?\033[1;91m] \033[1;92mBruteforce Introduction:
@@ -72,7 +73,7 @@ soc = """\033[1;91m[\033[;1;97m01\033[1;91m] \033[1;92mSelect any options
 \033[1;97m[\033[1;91m??\033[1;97m] \033[1;91mbrutex>> \033[1;92m"""
 
 def hackmail():
-	class GmailBruteForce():
+	class (Gmailfilecrack):
 	    def __init__(self):
 	        self.accounts = []
 	        self.passwords = []
@@ -102,7 +103,7 @@ def hackmail():
 	
 	                    print(("\033[1;31msorry %s " % user + " -> %s \033[1;m" % password ))
 	
-	instance = GmailBruteForce()
+	instance = Gmailfilecrack()
 	
 	headers = [('User-agent', 'Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.0.1) Gecko/2008071615 Fedora/3.0.1-1.fc9 Firefox/3.0.1')]
 	
@@ -351,5 +352,4 @@ while True:
 		sleep(1)
 	else:
 		print('\n\033[1;91m[\033[1;97m!\033[1;91m]\033[1;92m Invalid input')
-		sleep(1)
-
+	
